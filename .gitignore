@@ -2,3 +2,4 @@
 *.rej
 *.o
 dmenu
+stest
