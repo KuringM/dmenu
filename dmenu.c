@@ -35,7 +35,6 @@ enum {
 	SchemeNormHighlight,
 	SchemeSelHighlight,
 	SchemeOut,
-	SchemeMid,
 	SchemeLast }; /* color schemes */
 
 
@@ -185,8 +184,6 @@ drawitem(struct item *item, int x, int y, int w)
 	int r;
 	if (item == sel)
 		drw_setscheme(drw, scheme[SchemeSel]);
-	else if (item->left == sel || item->right == sel)
-		drw_setscheme(drw, scheme[SchemeMid]);
 	else if (item->out)
 		drw_setscheme(drw, scheme[SchemeOut]);
 	else

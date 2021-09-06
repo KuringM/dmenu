@@ -24,11 +24,10 @@ static const unsigned int alphas[][3]      = {
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#ebdbb2", "#1f2f3f" },
-	[SchemeSel] = { "#dce8f4", "#2f3f4f" },
+	[SchemeSel] = { "#1f2f3f", "#00ffff" },
 	[SchemeSelHighlight] = { "#ffc978", "#005577" },
 	[SchemeNormHighlight] = { "#ffc978", "#005577" },
 	[SchemeOut] = { "#ebdbb2", "#8ec07c" },
-	[SchemeMid] = { "#ebdbb2", "#1f2f3f" },
 };
 /* -l and -g options; controls number of lines and columns in grid if > 0 */
 static unsigned int lines      = 0;
